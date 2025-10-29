@@ -6,7 +6,7 @@ export default function NotFound() {
 	return (
 		<section>
 			<div className='container'>
-				<div className='mx-auto mt-20 flex flex-col items-center justify-center gap-8'>
+				<div className='mx-auto pt-32 pb-[200px] flex flex-col items-center justify-center gap-8 2xl:md:py-[262px]'>
 					<Image
 						src='/global/404.png'
 						alt='page not found'
@@ -14,7 +14,9 @@ export default function NotFound() {
 						height={251}
 					/>
 
-					<h5 className='text-center'>This page couldn’t be found</h5>
+					<h5 className='text-center font-bold text-neutral-900'>
+						This page couldn’t be found
+					</h5>
 					<Link className='btn btn-md btn-primary px-5' href={ROUTES.HOME}>
 						Go Back
 					</Link>
