@@ -1,0 +1,123 @@
+"use client"
+import { Swiper, SwiperSlide } from "swiper/react"
+
+import "swiper/css"
+import Image from "next/image"
+import { Autoplay } from "swiper/modules"
+import { TypographyH5 } from "@/components/ui/typography"
+import useMediaQuery from "@/hooks/useMediaQuery"
+
+interface PartnerLogo {
+	id: string
+	src: string
+	alt: string
+}
+
+const data: PartnerLogo[] = [
+	{
+		id: "agasdgasgd",
+		src: "/home/partner-logo-1.png",
+		alt: "partner logo",
+	},
+	{
+		id: "asdgasdehrgadg",
+		src: "/home/partner-logo-2.png",
+		alt: "partner logo",
+	},
+	{
+		id: "b4rthn4rnt",
+		src: "/home/partner-logo-3.png",
+		alt: "partner logo",
+	},
+	{
+		id: "asdgasdhagnn",
+		src: "/home/partner-logo-4.png",
+		alt: "partner logo",
+	},
+
+	{
+		id: "wegwegweh",
+		src: "/home/partner-logo-2.png",
+		alt: "partner logo",
+	},
+	{
+		id: "sdfcr4ht4rn5",
+		src: "/home/partner-logo-3.png",
+		alt: "partner logo",
+	},
+	{
+		id: "sadgbmrjtbirtbb",
+		src: "/home/partner-logo-1.png",
+		alt: "partner logo",
+	},
+]
+
+export default function PartnersSection() {
+	const isDesktop = useMediaQuery("(min-width: 768px)")
+	return (
+		<section className='py-12 bg-[#0F172A] relative z-0 after:absolute after:bg-linear-(--swiper-left-gradient) after:w-[355px] after:h-[185px] after:left-0 after:bottom-0 after:z-10 before:absolute before:bg-linear-(--swiper-right-gradient) before:w-[355px] before:h-[185px] before:right-0 before:bottom-0 before:z-10 after:hidden md:after:block before:hidden md:before:block'>
+			<div className='relative'>
+				<TypographyH5 className='text-blue-100 lg:text-xl font-medium xl:text-xl text-center'>
+					Trusted by Leading Companies
+				</TypographyH5>
+				<div className='mt-2.5 md:mt-6 relative '>
+					{isDesktop ? (
+						<Swiper
+							className='ease-linear! partners-swiper'
+							modules={[Autoplay]}
+							loop={true}
+							speed={1500}
+							autoplay={{
+								delay: 0,
+
+								disableOnInteraction: false,
+							}}
+							breakpoints={{
+								768: {
+									slidesPerView: 3,
+								},
+								1200: {
+									slidesPerView: 4,
+								},
+								1366: {
+									slidesPerView: 5,
+								},
+								1536: {
+									slidesPerView: 6,
+								},
+							}}
+						>
+							{data.map((slide) => (
+								<SwiperSlide key={slide.id}>
+									<div className='px-3 py-[30px] md:p-[50px]'>
+										<Image
+											className='w-auto md:w-full object-cover'
+											src={slide.src}
+											alt={slide.alt}
+											width={200}
+											height={35}
+										/>
+									</div>
+								</SwiperSlide>
+							))}
+						</Swiper>
+					) : (
+						<div className='flex items-center flex-wrap justify-center'>
+							{data.map((slide) => (
+								<div className='px-3 py-[30px] md:p-[50px]' key={slide.id}>
+									<Image
+										className='w-auto md:w-full object-cover'
+										src={slide.src}
+										alt={slide.alt}
+										width={200}
+										height={35}
+									/>
+								</div>
+							))}
+						</div>
+					)}
+				</div>
+			</div>
+		</section>
+	)
+}
