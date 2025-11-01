@@ -11,11 +11,11 @@ type CtaProps = {
 }
 export default function Cta({ title, firstBtnText, secondBtnText }: CtaProps) {
 	return (
-		<section className='py-11 md:py-8 relative after:absolute after:w-full after:h-1/2 after:bg-blue-800 after:left-0 after:-bottom-0 after:-z-10'>
+		<section className='py-11 md:py-8 relative after:absolute after:w-full after:h-1/2 after:bg-blue-800 after:left-0 after:bottom-0 after:-z-10 '>
 			<div className='container'>
-				<div className='rounded-[40px] bg-neutral-black px-6 pb-11 pt-24 relative overflow-hidden lg:py-[60px] lg:px-[110px]'>
+				<div className='rounded-[40px] bg-neutral-black px-6 pb-11 pt-24 relative overflow-hidden lg:py-[60px] lg:px-[110px] lg:h-[435px] lg:flex lg:items-center'>
 					<Image
-						className='absolute right-[-100px] -top-42 w-[267px] h-auto lg:w-[400px] lg:top-[unset] lg:right-[unset] lg:-left-20 lg:-bottom-20 xl:-left-14 xl:bottom-[-130px] xl:w-[460px]'
+						className='absolute right-[-100px] -top-42 w-[267px] h-auto lg:w-[350px] lg:top-[unset] lg:right-[unset] lg:-left-20 lg:-bottom-20 xl:-left-14 xl:bottom-[-130px] xl:w-[490px]'
 						src={"/cta/cta-image.png"}
 						alt='cta image'
 						width={600}
