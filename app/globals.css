@@ -73,6 +73,8 @@
 	/* Gradient */
 	--swiper-left-gradient: 270deg, rgba(15, 23, 42, 0) 0%, #0f172a 100%;
 	--swiper-right-gradient: 270deg, #0f172a 0%, rgba(15, 23, 42, 0) 100%;
+	--automation-service-card-gradient:
+		180deg, rgba(255, 255, 255, 0) 44.78%, #fff 79.56%;
 	--home-service-card-gradient:
 		216deg, rgba(13, 99, 236, 0) 61.44%, rgba(13, 99, 236, 0.2) 116.95%, #fff;
 	--differentiators-card-gradient:
