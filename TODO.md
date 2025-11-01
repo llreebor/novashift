@@ -1,6 +1,5 @@
 # Global
-    - Header smooth scroll
-    - fix button states
+    - Header smooth scroll to the anchor
     - add meta tags
 
 # Home Page
@@ -9,9 +8,14 @@
     - Fix responsiveness 320px 
 
 # About Page
+    - Hero
 
 # AI-Strategy Page
     - Hero
 
 # Team Page
     - Hero
+
+# Terms Page
+    - Hero
+    - Scroll animations
