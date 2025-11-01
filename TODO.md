@@ -1,5 +1,6 @@
 # Global
     - Header smooth scroll
+    - fix button states
 
 # Home Page
     - Home Hero Section

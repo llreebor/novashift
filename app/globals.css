@@ -138,6 +138,9 @@
 	.btn-primary {
 		@apply border border-blue-800 bg-blue-800 text-white not-disabled:hover:bg-blue-600 [.with-icon]:not-disabled:after:bg-blue-600 [.with-icon]:not-disabled:hover:bg-blue-800;
 	}
+	.btn-primary-dark {
+		@apply border border-blue-800 bg-neutral-900 text-white not-disabled:hover:bg-blue-600 [.with-icon]:not-disabled:after:bg-white  [.with-icon]:not-disabled:hover:bg-neutral-900 [.with-icon]:not-disabled:hover:text-neutral-900 [.with-icon]:[&_path]:fill-neutral-900;
+	}
 	.btn-secondary {
 		@apply border border-neutral-900 bg-neutral-900 text-white not-disabled:hover:bg-neutral-800 [.with-icon]:not-disabled:after:bg-white [.with-icon]:not-disabled:hover:bg-neutral-900 [.with-icon]:not-disabled:hover:text-neutral-900 [.with-icon]:[&_path]:fill-neutral-900;
 	}
@@ -149,6 +152,9 @@
 	}
 	.btn-outline-dark {
 		@apply border border-neutral-900 bg-white text-neutral-900 hover:bg-neutral-900 not-disabled:hover:text-white [.with-icon]:not-disabled:after:bg-neutral-900 [.with-icon]:not-disabled:hover:bg-white [.with-icon]:[&_path]:fill-white;
+	}
+	.btn-outline-white {
+		@apply border border-white bg-transparent text-white hover:bg-neutral-900 not-disabled:hover:text-neutral-900 [.with-icon]:not-disabled:after:bg-white [.with-icon]:not-disabled:hover:bg-transparent [.with-icon]:[&_path]:fill-neutral-900;
 	}
 	.btn-ghost {
 		@apply resize-none;
@@ -271,7 +277,7 @@
 
 	/* Icon Button */
 	.with-icon {
-		@apply relative z-0 after:absolute after:top-0.5 after:right-0.5 after:-z-10 after:h-10 after:w-10 after:origin-right after:rounded-full after:transition-all not-disabled:hover:after:w-[calc(100%-4px)] disabled:[&_path]:fill-gray-500;
+		@apply relative z-0 after:absolute after:top-0.5 after:right-0.5 after:-z-10 after:h-10 after:w-10 after:origin-right after:rounded-full after:transition-all not-disabled:hover:after:w-[calc(100%-4px)] disabled:[&_path]:fill-gray-500 [.icon-sm]:after:h-9 [.icon-sm]:after:w-9;
 	}
 }
 
