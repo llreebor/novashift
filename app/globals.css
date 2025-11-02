@@ -100,8 +100,11 @@
 
 /* Base Elements  */
 @layer base {
+	html {
+		@apply scroll-smooth scroll-pt-8;
+	}
 	body {
-		@apply text-neutral-800 font-manrope;
+		@apply text-neutral-800 font-manrope scroll-smooth;
 	}
 	a {
 		@apply transition-colors;

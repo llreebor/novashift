@@ -1,20 +1,58 @@
 "use client"
 
+import Link from "next/link"
+import { useEffect, useRef, useState } from "react"
 import { TypographyH5 } from "@/components/ui/typography"
 import useMediaQuery from "@/hooks/useMediaQuery"
 import { cn } from "@/lib/utils"
 
 const SECTIONS = [
-	"Acceptance of Terms",
-	"Services Provided",
-	"Account Registration",
-	"Subscription and Payments",
-	"Acceptable Use",
-	"Intellectual Property",
-] as const
+	{ id: "acceptance", title: "Acceptance of Terms" },
+	{ id: "services", title: "Services Provided" },
+	{ id: "account", title: "Account Registration" },
+	{ id: "payment", title: "Subscription and Payments" },
+	{ id: "use", title: "Acceptable Use" },
+	{ id: "property", title: "Intellectual Property" },
+]
 
 export default function ScrollableMenu() {
 	const isDesktop = useMediaQuery("(min-width: 768px)")
+	const [activeIndex, setActiveIndex] = useState<number>(0)
+
+	const isClickScrolling = useRef(false)
+
+	useEffect(() => {
+		const offset = 100 // 100px offset from top for better highlighting
+		const handleScroll = () => {
+			// Skip processing if the scroll was triggered by a click to avoid false active index changes
+			if (isClickScrolling.current) return
+			const scrollPosition = window.scrollY + offset
+			for (let i = SECTIONS.length - 1; i >= 0; i--) {
+				const element = document.getElementById(SECTIONS[i].id)
+				if (!element) continue
+				const elementTop = element.offsetTop
+				if (scrollPosition >= elementTop) {
+					setActiveIndex(i)
+					break
+				}
+			}
+		}
+		// Initial check to set the active index on component mount
+		handleScroll()
+		window.addEventListener("scroll", handleScroll, { passive: true })
+		return () => window.removeEventListener("scroll", handleScroll)
+	}, [])
+
+	const handleLinkClick = (idx: number) => {
+		// Set flag to indicate scroll is happening due to a click
+		isClickScrolling.current = true
+		setActiveIndex(idx)
+		// Reset the flag after 1 second (after scroll animation completes)
+		setTimeout(() => {
+			isClickScrolling.current = false
+		}, 1000)
+	}
+
 	return (
 		<section className='py-10 md:py-20'>
 			<div className='container'>
@@ -24,24 +62,28 @@ export default function ScrollableMenu() {
 							<nav className='sticky left-0 top-5'>
 								<ul>
 									{SECTIONS.map((section, idx) => (
-										<li key={section.trim()} className='group'>
-											<button
+										<li key={section.id} className='group'>
+											<Link
+												href={`#${section.id}`}
 												type='button'
 												className={cn(
 													"px-2.5 py-3 rounded-[10px] flex items-center gap-3 w-full hover:bg-blue-50",
-													idx === 0 && "bg-blue-500 text-white",
+													activeIndex === idx &&
+														"bg-blue-500 text-white hover:bg-blue-500",
 												)}
+												onClick={() => handleLinkClick(idx)}
 											>
 												<span
 													className={cn(
 														"flex items-center justify-center size-8 rounded-full text-xl font-medium",
-														idx === 0 && "bg-white text-blue-500",
+														activeIndex === idx &&
+															"bg-white text-blue-500 hover:bg-blue-500",
 													)}
 												>
 													{idx + 1}
 												</span>{" "}
-												{section}
-											</button>
+												{section.title}
+											</Link>
 										</li>
 									))}
 								</ul>
@@ -50,7 +92,7 @@ export default function ScrollableMenu() {
 					)}
 
 					<div className='space-y-8'>
-						<div className='space-y-4'>
+						<div className='space-y-4' id='acceptance'>
 							<TypographyH5 className='text-[28px] tracking-[0.28px] leading-[1.4]'>
 								1. Acceptance of Terms
 							</TypographyH5>
@@ -63,7 +105,7 @@ export default function ScrollableMenu() {
 							</p>
 						</div>
 
-						<div className='space-y-4'>
+						<div className='space-y-4' id='services'>
 							<TypographyH5 className='text-[28px] tracking-[0.28px] leading-[1.4]'>
 								2. Services Provided
 							</TypographyH5>
@@ -76,7 +118,7 @@ export default function ScrollableMenu() {
 							</p>
 						</div>
 
-						<div className='space-y-4'>
+						<div className='space-y-4' id='account'>
 							<TypographyH5 className='text-[28px] tracking-[0.28px] leading-[1.4]'>
 								3. Account Registration
 							</TypographyH5>
@@ -88,7 +130,7 @@ export default function ScrollableMenu() {
 							</p>
 						</div>
 
-						<div className='space-y-4'>
+						<div className='space-y-4' id='payment'>
 							<TypographyH5 className='text-[28px] tracking-[0.28px] leading-[1.4]'>
 								4. Subscription and Payments
 							</TypographyH5>
@@ -109,7 +151,7 @@ export default function ScrollableMenu() {
 							</ul>
 						</div>
 
-						<div className='space-y-4'>
+						<div className='space-y-4' id='use'>
 							<TypographyH5 className='text-[28px] tracking-[0.28px] leading-[1.4]'>
 								5. Acceptable Use
 							</TypographyH5>
@@ -137,7 +179,7 @@ export default function ScrollableMenu() {
 							</p>
 						</div>
 
-						<div className='space-y-4'>
+						<div className='space-y-4' id='property'>
 							<TypographyH5 className='text-[28px] tracking-[0.28px] leading-[1.4]'>
 								6. Intellectual Property
 							</TypographyH5>
