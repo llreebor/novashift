@@ -7,11 +7,5 @@
     - Statistic Section layout fix
     - Fix responsiveness 320px 
 
-# AI-Strategy Page
-    - Hero
-
-# Team Page
-    - Hero
-
 # Terms Page
     - Hero
