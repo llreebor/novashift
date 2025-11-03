@@ -112,13 +112,13 @@ export default function MobileMenu({
 													<ul className='mb-2'>
 														{item.submenu.map((subItem) => (
 															<li key={subItem.href}>
-																<a
+																<Link
 																	href={subItem.href}
 																	className='mobile-submenu-link'
 																	onClick={() => handleLinkClick(subItem.href)}
 																>
 																	{subItem.label}
-																</a>
+																</Link>
 															</li>
 														))}
 													</ul>
@@ -127,13 +127,13 @@ export default function MobileMenu({
 										</div>
 									) : (
 										// Regular mobile menu item (no submenu)
-										<a
+										<Link
 											href={item.href}
 											className='mobile-menu-link'
 											onClick={() => handleLinkClick(item.href)}
 										>
 											{item.label}
-										</a>
+										</Link>
 									)}
 								</li>
 							))}

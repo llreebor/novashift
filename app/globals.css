@@ -69,6 +69,7 @@
 	--color-neutral-300: #e6e6e9;
 	--color-neutral-200: #f4f4f6;
 	--color-neutral-100: #f9fafb;
+	--color-neutral-50: #f8f8f8;
 
 	/* Gradient */
 	--swiper-left-gradient: 270deg, rgba(15, 23, 42, 0) 0%, #0f172a 100%;

@@ -33,7 +33,7 @@ export default function Header() {
 	}, [isMobileMenuOpen])
 
 	return (
-		<header className='py-4'>
+		<header className='py-4 relative z-10'>
 			<div className='container'>
 				<div className='flex items-center justify-between'>
 					<Link href={ROUTES.HOME}>

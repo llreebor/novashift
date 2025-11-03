@@ -1,13 +1,12 @@
 import AboutSection from "./sections/about"
 import DifferentiatorsSection from "./sections/differentiators"
+import HeroSection from "./sections/hero"
 import SpecializeSection from "./sections/specialize"
 
-export default function Home() {
+export default function AboutPage() {
 	return (
 		<>
-			<div className='h-[400px] w-full bg-neutral-900 text-white text-center text-2xl flex items-center justify-center'>
-				HERO
-			</div>
+			<HeroSection />
 			<AboutSection />
 			<SpecializeSection />
 			<DifferentiatorsSection />

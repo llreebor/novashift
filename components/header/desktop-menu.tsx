@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link"
 import { usePathname } from "next/navigation"
 import type { MenuItem } from "@/config/navigation"
 import { cn } from "@/lib/utils"
@@ -52,21 +53,21 @@ export default function DesktopMenu({ items }: DesktopMenuProps) {
 								<ul className='submenu' aria-label={`${item.label} submenu`}>
 									{item.submenu.map((subItem) => (
 										<li key={subItem.href}>
-											<a className='submenu-link' href={subItem.href}>
+											<Link className='submenu-link' href={subItem.href}>
 												{subItem.label}
-											</a>
+											</Link>
 										</li>
 									))}
 								</ul>
 							</div>
 						) : (
 							// Regular menu item (no submenu)
-							<a
+							<Link
 								href={item.href}
 								className={cn("menu-link", pathname === item.href && "current")}
 							>
 								{item.label}
-							</a>
+							</Link>
 						)}
 					</li>
 				))}
