@@ -10,10 +10,11 @@ export type CaseStudiesItem = {
 export type CaseAccordionItem = {
 	id: string
 	title: string
-	text: string
+	text: string | { content: string; key?: string }[]
 }
 export interface CaseAccordionProps {
 	accordionData: CaseAccordionItem[]
 	imageUrl: string
 	imageClass?: string
+	reverse?: boolean
 }

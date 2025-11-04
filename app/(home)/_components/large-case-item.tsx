@@ -2,9 +2,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { TypographyH4 } from "@/components/ui/typography"
 import { ROUTES } from "@/config/routes"
-import type { CaseStudies } from "@/types/case-studies.type"
+import type { CaseStudiesItem } from "@/types/case-studies.type"
 
-export default function LargeCaseItem({ data }: { data: CaseStudies }) {
+export default function LargeCaseItem({ data }: { data: CaseStudiesItem }) {
 	return (
 		<Link href={`${ROUTES.ARTICLE}/${data.id}`} className='group'>
 			<div className='aspect-9/16 h-[395px] w-full max-w-full rounded-2xl overflow-hidden'>

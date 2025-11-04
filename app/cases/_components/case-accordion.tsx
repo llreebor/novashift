@@ -9,14 +9,15 @@ import type { CaseAccordionProps } from "@/types/case-studies.type"
 export default function CaseAccordion({
 	accordionData,
 	imageUrl,
+	reverse,
 	imageClass,
 }: CaseAccordionProps) {
 	const [expandedItemId, setExpandedItemId] = useState<string | null>(
-		accordionData[0]?.id ?? null, // Open the first item by default, if available
+		accordionData[0]?.id ?? null,
 	)
 
 	const toggleItem = (id: string) => {
-		setExpandedItemId((prev) => (prev === id ? null : id)) // If clicking the open one, close it; else open this one (closes others implicitly)
+		setExpandedItemId((prev) => (prev === id ? null : id))
 	}
 
 	const accordionRef = useRef<HTMLDivElement>(null)
@@ -27,7 +28,12 @@ export default function CaseAccordion({
 	})
 
 	return (
-		<div className='flex flex-col gap-[60px] md:flex-row md:items-center'>
+		<div
+			className={cn(
+				"flex flex-col gap-[60px] md:flex-row md:items-center",
+				reverse && "md:flex-row-reverse",
+			)}
+		>
 			<div className='md:max-w-[350px] md:w-full md:shrink-0 lg:max-w-[500px] xl:max-w-[598px]'>
 				<Image
 					className={cn("max-w-full w-full h-auto rounded-[50px]", imageClass)}
@@ -76,7 +82,17 @@ export default function CaseAccordion({
 							>
 								<div className='overflow-hidden'>
 									<div className='pt-2.5 pl-[46px]'>
-										<p>{item.text}</p>
+										{Array.isArray(item.text) ? (
+											<div className='space-y-4'>
+												{item.text.map((paragraph, index) => (
+													<p key={paragraph.key} className='leading-relaxed'>
+														{paragraph.content}
+													</p>
+												))}
+											</div>
+										) : (
+											<p className='leading-relaxed'>{item.text}</p>
+										)}
 									</div>
 								</div>
 							</div>

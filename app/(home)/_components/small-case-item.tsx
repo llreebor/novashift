@@ -2,9 +2,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { TypographyH4 } from "@/components/ui/typography"
 import { ROUTES } from "@/config/routes"
-import type { CaseStudies } from "@/types/case-studies.type"
+import type { CaseStudiesItem } from "@/types/case-studies.type"
 
-export default function SmallCaseItem({ data }: { data: CaseStudies }) {
+export default function SmallCaseItem({ data }: { data: CaseStudiesItem }) {
 	return (
 		<Link
 			href={`${ROUTES.ARTICLE}/${data.id}`}
