@@ -1,9 +1,9 @@
 import { TypographyH2 } from "@/components/ui/typography"
-import type { CaseStudies } from "@/types/case-studies.type"
+import type { CaseStudiesItem } from "@/types/case-studies.type"
 import LargeCaseItem from "../_components/large-case-item"
 import SmallCaseItem from "../_components/small-case-item"
 
-const dataLargeCase: CaseStudies = {
+const dataLargeCase: CaseStudiesItem = {
 	id: "235623623626",
 	title: "Poker Brain – AI-Powered Poker Training System",
 	description:
@@ -11,7 +11,7 @@ const dataLargeCase: CaseStudies = {
 	imageUrl: "/home/large-case.png",
 }
 
-const dataSmallCases: CaseStudies[] = [
+const dataSmallCases: CaseStudiesItem[] = [
 	{
 		id: "2356231246",
 		title: "AI Video Automation System",
