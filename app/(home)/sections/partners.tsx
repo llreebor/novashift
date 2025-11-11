@@ -70,8 +70,8 @@ export default function PartnersSection() {
 							className='ease-linear! partners-swiper'
 							modules={[Autoplay]}
 							loop={true}
-							speed={2000}
-							spaceBetween={60}
+							speed={3000}
+							spaceBetween={120}
 							autoplay={{
 								delay: 0,
 

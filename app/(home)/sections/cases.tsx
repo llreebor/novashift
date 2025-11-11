@@ -1,10 +1,12 @@
 import { TypographyH2 } from "@/components/ui/typography"
+import { ROUTES } from "@/config/routes"
 import type { CaseStudiesItem } from "@/types/case-studies.type"
 import LargeCaseItem from "../_components/large-case-item"
 import SmallCaseItem from "../_components/small-case-item"
 
 const largeCasePost: CaseStudiesItem = {
 	id: "235623623626",
+	href: ROUTES.CASE_POKER_BRAIN,
 	title: "Poker Brain – AI-Powered Poker Training System",
 	description:
 		"An AI-driven poker coach designed from concept to roadmap, turning strategy insights into a build-ready product plan.",
@@ -14,6 +16,7 @@ const largeCasePost: CaseStudiesItem = {
 const smallCasePosts: CaseStudiesItem[] = [
 	{
 		id: "2356231246",
+		href: ROUTES.CASE_AI_AUTOMATION,
 		title: "AI Video Automation System",
 		description:
 			"A fully automated video production system that creates ready-to-publish marketing videos in hours using integrated AI tools.",
@@ -21,6 +24,7 @@ const smallCasePosts: CaseStudiesItem[] = [
 	},
 	{
 		id: "235346246",
+		href: ROUTES.CASE_DEVELOPMENT_AUTOMATION,
 		title: "Development Automation Platform",
 		description:
 			"An intelligent automation system that connects Asana and GitHub, enabling AI-driven code generation, task management, and end-to-end development workflows.",
@@ -28,6 +32,7 @@ const smallCasePosts: CaseStudiesItem[] = [
 	},
 	{
 		id: "7681246",
+		href: ROUTES.CASE_SOCIAL_MEDIA,
 		title: "AI-Powered Social Media Platform",
 		description:
 			"A full-stack platform that transforms brand assets into AI-generated, scheduled social posts—automating content creation, design, and publishing across Instagram and Facebook.",

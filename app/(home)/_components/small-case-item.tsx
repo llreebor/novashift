@@ -1,13 +1,12 @@
 import Image from "next/image"
 import Link from "next/link"
 import { TypographyH4 } from "@/components/ui/typography"
-import { ROUTES } from "@/config/routes"
 import type { CaseStudiesItem } from "@/types/case-studies.type"
 
 export default function SmallCaseItem({ post }: { post: CaseStudiesItem }) {
 	return (
 		<Link
-			href={`${ROUTES.POST}/${post.id}`}
+			href={`${post.href}`}
 			className='group md:flex md:items-center md:gap-6'
 		>
 			<div className='aspect-square w-full max-w-full rounded-2xl md:size-40 overflow-hidden md:shrink-0'>

@@ -30,7 +30,7 @@ const data: CaseAccordionProps = {
 }
 export default function PokerBrainSection() {
 	return (
-		<section className='py-12 md:py-20'>
+		<section className='py-12 md:py-20' id='poker-brain'>
 			<div className='container'>
 				<div className='flex flex-col gap-8 items-center text-center md:grid md:grid-cols-2 md:gap-4 md:text-left md:items-start'>
 					<TypographyH4 className='md:text-4xl md:leading-[1.4]'>

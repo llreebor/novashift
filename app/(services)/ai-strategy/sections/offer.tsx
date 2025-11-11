@@ -46,7 +46,7 @@ export default function OfferSection() {
 								height={488}
 							/>
 
-							<div className='md:max-w-[350px]'>
+							<div className='md:max-w-[360px]'>
 								<div className='mt-4 md:mt-0'>
 									<TypographyH6 className='text-2xl text-balance'>
 										AI & Automation Opportunity Mapping
@@ -55,11 +55,13 @@ export default function OfferSection() {
 										Discover your readiness in minutes
 									</p>
 									<p className='mt-4'>
-										Our complimentary AI & Automation Audit helps you assess
-										where AI and automation can unlock value. —whether by
+										Our complimentary AI & Automation Audit helps you identify
+										where AI and automation can unlock real value—whether by
 										streamlining internal workflows, enhancing customer
-										experience, or improving decision-making. It's a practical
-										first step toward smarter, leaner operations.
+										experience, or improving decision-making. We combine insight
+										and practical evaluation to highlight your highest-impact
+										opportunities and outline the first actions toward smarter,
+										leaner operations.
 									</p>
 								</div>
 
@@ -133,7 +135,7 @@ export default function OfferSection() {
 								height={488}
 							/>
 
-							<div className='md:max-w-[350px]'>
+							<div className='md:max-w-[360px]'>
 								<div className='mt-4 md:mt-0'>
 									<TypographyH6 className='text-2xl text-balance'>
 										AI & Automation Opportunity Mapping
@@ -160,28 +162,30 @@ export default function OfferSection() {
 									<div className='overflow-hidden'>
 										<ul className='mt-6 pl-2.5 pb-6'>
 											<li className='relative pl-[13px] not-last:mb-4 before:absolute before:top-2.5 before:left-0 before:size-1 before:rounded-full before:bg-neutral-900'>
-												<b className='text-neutral-900'>Scope:</b> This
-												assessment evaluates your organization's readiness for
-												AI and automation by examining current processes, tools,
-												and challenges.
+												<b className='text-neutral-900'>Focus areas:</b>{" "}
+												Processes & bottlenecks, data & systems (quality,
+												access, integrations), feasibility, adoption readiness,
+												risk & compliance.
 											</li>
 											<li className='relative pl-[13px] not-last:mb-4 before:absolute before:top-2.5 before:left-0 before:size-1 before:rounded-full before:bg-neutral-900'>
-												<b className='text-neutral-900'>Activities:</b> You will
-												complete a structured set of role- and industry-specific
-												questions designed to identify opportunities for
-												intelligent solutions.
+												<b className='text-neutral-900'>Activities:</b>{" "}
+												Stakeholder sessions, workflow & systems review,
+												value/effort scoring, integration mapping.
 											</li>
 											<li className='relative pl-[13px] not-last:mb-4 before:absolute before:top-2.5 before:left-0 before:size-1 before:rounded-full before:bg-neutral-900'>
-												<b className='text-neutral-900'>What you receive:</b> A
-												readiness report accompanied by tailored recommendations
-												highlighting both AI and automation opportunities
-												relevant to your business.
+												<b className='text-neutral-900'>What you receive:</b>{" "}
+												Prioritised use cases, 60–90 day implementation plan
+												with milestones, solution outline & integration
+												pathways, pilot blueprint, governance guardrails.
 											</li>
 											<li className='relative pl-[13px] not-last:mb-4 before:absolute before:top-2.5 before:left-0 before:size-1 before:rounded-full before:bg-neutral-900'>
-												<b className='text-neutral-900'>Time & effort:</b> The
-												assessment requires approximately 6–10 minutes and
-												consists primarily of AI adapted multiple-choice
-												questions.
+												<b className='text-neutral-900'>Time & effort:</b>{" "}
+												Typical duration 2–4 weeks; access to key stakeholders
+												and representative workflows.
+											</li>
+											<li className='relative pl-[13px] not-last:mb-4 before:absolute before:top-2.5 before:left-0 before:size-1 before:rounded-full before:bg-neutral-900'>
+												<b className='text-neutral-900'>Outcome:</b> A clear,
+												execution-ready plan aligned to your priorities.
 											</li>
 										</ul>
 									</div>

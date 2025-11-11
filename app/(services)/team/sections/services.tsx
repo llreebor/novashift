@@ -13,14 +13,14 @@ const serviceItems: ServiceItem[] = [
 	{
 		id: "string1",
 		imageUrl: "/images/team/service-1.png",
-		title: "MVPs That Validate and Scale",
+		title: "MVPs Built for Validation and Scalability",
 		text: "Our rapid AI MVP development doesn't just prove concepts—it creates compelling, market-ready products that win customer enthusiasm and investor confidence. We architect with scalability built-in, using technologies that support seamless transitions from startup to scale-up.",
 		imageClasses: "absolute -left-1.5 -top-5 -z-10 w-[387px] h-[397px]",
 	},
 	{
 		id: "string2",
 		imageUrl: "/images/team/service-2.png",
-		title: "AI Enhancements That Transform Existing Systems",
+		title: "AI Integrations That Enhance Core Systems",
 		text: "Turn your current digital infrastructure into a competitive advantage with our targeted AI enhancements. We seamlessly integrate customer-converting chatbots, implement intelligence around your knowledge repository, and deploy machine learning pipelines that multiply team productivity without disrupting your operations.",
 		imageClasses:
 			"absolute -right-[60px] md:-right-[100px] -top-5 -z-10 w-[387px] h-[397px]",
@@ -28,7 +28,7 @@ const serviceItems: ServiceItem[] = [
 	{
 		id: "string3",
 		imageUrl: "/images/team/service-3.png",
-		title: "APIs That Unlock AI-Powered Intelligence",
+		title: "APIs Designed to Deliver Intelligent Functions",
 		text: "We build custom APIs around your data and tools, making them accessible to LLMs in powerful, secure, and flexible ways. This turns siloed systems into dynamic, AI-ready resources—enabling smarter decisions, richer experiences, and unexpected value across your business.",
 		imageClasses:
 			"absolute -right-[60px] md:-right-[100px] -top-5 -z-10 w-[387px] h-[397px]",
@@ -36,7 +36,7 @@ const serviceItems: ServiceItem[] = [
 	{
 		id: "string4",
 		imageUrl: "/images/team/service-4.png",
-		title: "Chatbots and Virtual Assistants That Redefine Engagement",
+		title: "Chatbots and Assistants Powered by Advanced AI",
 		text: "Revolutionize how customers and employees interact with your business through natural language interfaces that seemed impossible just years ago. Our AI-powered conversational interfaces don't just answer questions—they solve problems, guide decisions, and create exceptional experiences that build trust and drive efficiency.",
 		imageClasses:
 			"absolute -right-3.5 md:-right-12 top-1.5 -z-10 w-[326px] h-[335px]",

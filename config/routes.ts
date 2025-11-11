@@ -11,4 +11,8 @@ export const ROUTES = {
 	POST: "/post",
 	PRIVACY: "/privacy",
 	TERMS: "/terms",
+	CASE_POKER_BRAIN: "/cases/#poker-brain",
+	CASE_AI_AUTOMATION: "/cases/#ai-automation",
+	CASE_DEVELOPMENT_AUTOMATION: "/cases/#development-automation",
+	CASE_SOCIAL_MEDIA: "/cases/#social-media",
 } as const

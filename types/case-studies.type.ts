@@ -1,6 +1,7 @@
 // Home Page Case Item
 export interface CaseStudiesItem {
 	id: string
+	href: string
 	title: string
 	description: string
 	imageUrl: string
