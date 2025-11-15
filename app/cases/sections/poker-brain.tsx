@@ -37,9 +37,8 @@ export default function PokerBrainSection() {
 						Poker Brain – AI-Powered Poker Training System
 					</TypographyH4>
 					<p className='text-neutral-900 text-xl tracking-[0.2px]'>
-						<b className='text-neutral-black'>From concept to roadmap</b>: how
-						we helped shape and scope an intelligent training tool for
-						competitive players.
+						How we transformed a poker enthusiast’s idea into a build-ready AI
+						training system for competitive players.
 					</p>
 				</div>
 

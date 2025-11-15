@@ -39,9 +39,8 @@ export default function DevelopmentAutomationSection() {
 						Autobot – AI-Powered Development Automation Platform
 					</TypographyH4>
 					<p className='text-neutral-900 text-xl tracking-[0.2px]'>
-						<b className='text-neutral-black'>How we built</b>: a scalable
-						system to generate high-quality marketing videos with minimal human
-						input.
+						How we created an intelligent AI assistant that automates software
+						development workflows from Asana to GitHub.
 					</p>
 				</div>
 

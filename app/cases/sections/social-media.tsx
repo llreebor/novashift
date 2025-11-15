@@ -38,9 +38,8 @@ export default function SocialMediaSection() {
 						GlamGrid AI Social Spark – AI-Powered Social Media Platform
 					</TypographyH4>
 					<p className='text-neutral-900 text-xl tracking-[0.2px]'>
-						<b className='text-neutral-black'>From concept to roadmap</b>: how
-						we helped shape and scope an intelligent training tool for
-						competitive players.
+						How we built a full-stack AI platform that turns brand assets into
+						ready-to-publish social media content.
 					</p>
 				</div>
 

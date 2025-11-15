@@ -46,7 +46,7 @@ export default function OfferSection() {
 								height={488}
 							/>
 
-							<div className='md:max-w-[75%] xl:max-w-[360px]'>
+							<div className='md:max-w-[75%] xl:max-w-[350px]'>
 								<div className='mt-4 md:mt-0'>
 									<TypographyH6 className='text-2xl text-balance'>
 										AI & Automation Opportunity Mapping
@@ -55,13 +55,16 @@ export default function OfferSection() {
 										Discover your readiness in minutes
 									</p>
 									<p className='mt-4'>
-										Our complimentary AI & Automation Audit helps you identify
-										where AI and automation can unlock real value—whether by
-										streamlining internal workflows, enhancing customer
-										experience, or improving decision-making. We combine insight
-										and practical evaluation to highlight your highest-impact
-										opportunities and outline the first actions toward smarter,
-										leaner operations.
+										We design AI-powered workflows that eliminate busywork and
+										reduce manual error—boosting efficiency across every
+										department. From lead routing to document processing, our
+										automations keep your operations running smoothly, 24/7.
+										Today's low-code and no-code platforms offer unprecedented
+										opportunities to transform operations—but only when
+										implemented with strategic foresight. Our automation
+										architects leverage Zapier, Make.com, and n8n to create
+										intelligent workflows that integrate seamlessly with leading
+										AI models and your essential SaaS tools.
 									</p>
 								</div>
 
@@ -146,12 +149,17 @@ export default function OfferSection() {
 										Turn business potential into scalable solutions
 									</p>
 									<p className='mt-4'>
-										This paid audit is for teams ready to take the next step. We
-										run discovery sessions, interviews, and collaborative
-										workshops with your stakeholders to uncover where AI and
-										automation can make a measurable difference. With our
-										consulting partners, we map opportunities and deliver a
-										transformation roadmap tailored to your business.
+										We architect intelligent, future-ready integrations across
+										your SaaS ecosystem—removing data silos, reducing manual
+										effort, and enabling secure, reliable data exchange across
+										systems. The outcome is a unified, high-performing tech
+										stack that evolves with your business and delivers
+										measurable, ongoing value. Today's connected landscape
+										demands seamless interoperability between apps, APIs, and
+										platforms. Our engineers build integration frameworks using
+										Zapier, Make.com, webhooks, and custom Python logic to
+										ensure your tools communicate flawlessly—creating a scalable
+										foundation for innovation and long-term growth.
 									</p>
 								</div>
 

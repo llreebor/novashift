@@ -38,9 +38,8 @@ export default function MarketingVideoSection() {
 						AI-Powered Marketing Video Automation System
 					</TypographyH4>
 					<p className='text-neutral-900 text-xl tracking-[0.2px]'>
-						<b className='text-neutral-black'>How we built</b>: a scalable
-						system to generate high-quality marketing videos with minimal human
-						input.
+						How we built an end-to-end automation platform that creates
+						high-quality marketing videos in hours, not days.
 					</p>
 				</div>
 
