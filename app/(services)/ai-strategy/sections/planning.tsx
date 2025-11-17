@@ -54,8 +54,8 @@ export default function PlanningSection() {
 							alt='check icon'
 						/>
 						<p className='text-white'>
-							<b>What you receive</b>: TA clear solution brief with roadmap,
-							cost estimate, feasibility analysis, and implementation plan.
+							<b>What you receive</b>: A clear solution brief with roadmap, cost
+							estimate, feasibility analysis, and implementation plan.
 						</p>
 					</li>
 					<li className='flex items-start gap-2.5'>

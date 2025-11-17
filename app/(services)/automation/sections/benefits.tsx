@@ -6,9 +6,9 @@ export default function BenefitsSection() {
 		<section className='py-11 md:py-[100px]'>
 			<div className='container'>
 				<div className='grid md:grid-cols-2 gap-6'>
-					<div className='rounded-2xl border border-neutral-500 bg-linear-(--home-service-card-gradient) p-6 lg:pb-[44px] pt-[262px] overflow-hidden relative lg:pt-6'>
+					<div className='rounded-2xl border border-neutral-500 bg-linear-(--home-service-card-gradient) p-6 lg:pb-11 pt-64 overflow-hidden relative lg:pt-6'>
 						<div className='grid z-0'>
-							<div className='size-[450px] absolute -top-28 right-[-153px] after:absolute after:bg-linear-(--automation-service-card-gradient) after:w-full after:h-full after:inset-0 after:z-0 lg:after:hidden lg:top-[50px] lg:right-[-103px]'>
+							<div className='size-[450px] absolute -top-28 right-[-153px] after:absolute after:bg-linear-(--automation-service-card-gradient) after:w-full after:h-full after:inset-0 after:z-0 lg:after:hidden lg:top-[50px] lg:right-[-243px] xl:right-[-153px]'>
 								<Image
 									className='w-full h-full -z-10'
 									src={"/images/automation/benefit-1.png"}
@@ -33,19 +33,20 @@ export default function BenefitsSection() {
 									<p className='mt-4'>
 										Today's low-code and no-code platforms offer unprecedented
 										opportunities to transform operations—but only when
-										implemented with strategic foresight. Our automation
-										architects leverage Zapier, Make.com, and n8n to create
-										intelligent workflows that integrate seamlessly with leading
-										AI models and your essential SaaS tools.
+										implemented with strategic foresight.{" "}
+										<br className='hidden md:block' /> Our automation architects
+										leverage Zapier, Make.com, and n8n to create intelligent
+										workflows that integrate seamlessly with leading AI models
+										and your essential SaaS tools.
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div className='rounded-2xl border border-neutral-500 bg-linear-(--home-service-card-gradient) p-6 lg:pb-11 pt-[334px] overflow-hidden relative lg:pt-6'>
+					<div className='rounded-2xl border border-neutral-500 bg-linear-(--home-service-card-gradient) p-6 lg:pb-11 pt-[334px] md:pt-64 overflow-hidden relative lg:pt-6'>
 						<div className='grid z-0'>
-							<div className='w-[477px] h-[509px] absolute -top-16 -right-40 after:absolute after:bg-linear-(--automation-service-card-gradient) after:w-full after:h-full after:inset-0 after:z-0 lg:after:hidden lg:right-[-230px] lg:top-3'>
+							<div className='w-[477px] h-[509px] absolute -top-16 -right-40 after:absolute after:bg-linear-(--automation-service-card-gradient) after:w-full after:h-full after:inset-0 after:z-0 lg:after:hidden lg:right-[-290px] lg:top-0 xl:-right-48'>
 								<Image
 									className='w-full h-full -z-10'
 									src={"/images/automation/benefit-2.png"}
@@ -63,21 +64,19 @@ export default function BenefitsSection() {
 
 									<p className='mt-4'>
 										We architect intelligent, future-ready integrations across
-										your SaaS ecosystem—eliminating data silos, reducing manual
-										work, and enabling secure, reliable information flow between
-										systems. The result is a unified, efficient tech stack that
-										evolves with your business and continues to deliver value
-										over time.
+										your SaaS ecosystem—removing data silos, reducing manual
+										effort, and enabling secure, reliable data exchange across
+										systems. The outcome is a unified, high-performing tech
+										stack that evolves with your business and delivers
+										measurable, ongoing value.
 									</p>
 									<p className='mt-4'>
-										Today’s digital ecosystems depend on seamless connectivity
-										between tools, platforms, and data sources. Our engineers
-										design integration frameworks using APIs, webhooks, and
-										automation platforms like Make.com, Zapier, and custom
-										Python scripts. Whether connecting CRMs, ERPs, or AI-driven
-										analytics, we ensure every component communicates
-										effortlessly—creating a foundation that supports innovation,
-										scale, and long-term growth
+										Today's connected landscape demands seamless
+										interoperability between apps, APIs, and platforms. Our
+										engineers build integration frameworks using Zapier,
+										Make.com, webhooks, and custom Python logic to ensure your
+										tools communicate flawlessly—creating a scalable foundation
+										for innovation and long-term growth.
 									</p>
 								</div>
 							</div>

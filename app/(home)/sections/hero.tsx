@@ -1,6 +1,8 @@
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import ButtonIcon from "@/components/ui/button-icon"
 import { TypographyH1 } from "@/components/ui/typography"
+import { ROUTES } from "@/config/routes"
 
 export default function HeroSection() {
 	return (
@@ -16,10 +18,17 @@ export default function HeroSection() {
 						</p>
 
 						<div className='mt-8 flex flex-col items-center justify-center gap-3 min-[374px]:flex-row md:justify-start'>
-							<Button variant='outline'>Book a call</Button>
-							<Button variant='primary' withIcon>
+							<Link href={ROUTES.CONTACT_US} className='btn btn-md btn-outline'>
+								Book a call
+							</Link>
+
+							<Link
+								href={`${ROUTES.AI_STRATEGY}/#offer-section`}
+								className='btn btn-md btn-primary with-icon'
+							>
 								AI Readiness Audit
-							</Button>
+								<ButtonIcon iconColor={"white"} />
+							</Link>
 						</div>
 					</div>
 					<div className='absolute shrink-0 max-w-[522px] mx-auto bottom-0 -left-16 -right-16 md:left-[unset] md:-right-20 md:max-w-[450px] mx:m-0 lg:max-w-[700px] lg:-right-20 lg:h-auto xl:-right-36 xl:max-w-[902px]'>

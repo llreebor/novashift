@@ -12,7 +12,7 @@ export default function OfferSection() {
 	const [isExpandedFree, setIsExpandedFree] = useState(false)
 	const [isExpandedPaid, setIsExpandedPaid] = useState(false)
 	return (
-		<section className='py-20 md:py-[100px]'>
+		<section className='py-20 md:py-[100px]' id='offer-section'>
 			<div className='container'>
 				<div className='grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-20'>
 					<div className='space-y-4'>

@@ -1,5 +1,7 @@
-import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import ButtonIcon from "@/components/ui/button-icon"
 import { TypographyH2 } from "@/components/ui/typography"
+import { ROUTES } from "@/config/routes"
 import type { Post } from "@/types/blog"
 import InsightItem from "../_components/insight-item"
 
@@ -21,7 +23,13 @@ export default function LatestInsightsSection({
 							artificial intelligence
 						</p>
 					</div>
-					<Button withIcon>View All</Button>
+					<Link
+						href={ROUTES.AI}
+						className='btn btn-md btn-primary with-icon mt-8'
+					>
+						View All
+						<ButtonIcon iconColor={"white"} />
+					</Link>
 				</div>
 
 				<div className='grid gap-6 mt-[60px] md:grid-cols-2 lg:grid-cols-3'>

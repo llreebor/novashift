@@ -40,7 +40,7 @@ export default function Cta({ title, firstBtnText, secondBtnText }: CtaProps) {
 							</Link>
 							{secondBtnText && (
 								<Link
-									href={ROUTES.CONTACT_US}
+									href={`${ROUTES.AI_STRATEGY}/#offer-section`}
 									className='btn btn-md btn-outline-white with-icon text-center flex justify-center max-w-full [&_svg]:absolute [&_svg]:right-3 [&_svg]:top-3 sm:pr-13'
 								>
 									{secondBtnText}
