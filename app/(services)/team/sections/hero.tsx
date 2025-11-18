@@ -15,7 +15,17 @@ export default function HeroSection() {
 						</p>
 					</div>
 
-					<div className='absolute bottom-0 shrink-0 max-w-[471px] mx-auto -left-20 -right-20 md:left-[unset] mx:m-0 md:max-w-[500px] lg:max-w-[600px] md:-right-6 md:-bottom-10 lg:h-auto xl:top-20 xl:-right-[124px] xl:bottom-[unset] xl:max-w-[947px] 2xl:max-w-[846px]'>
+					<div className='absolute bottom-0 shrink-0 max-w-[471px] mx-auto -left-20 -right-20 md:left-[unset] mx:m-0 md:max-w-[400px] lg:max-w-[600px] md:-right-6 md:-bottom-10 lg:h-auto xl:-top-10 xl:-right-[124px] xl:bottom-[unset] xl:max-w-[947px] 2xl:max-w-[846px]'>
+						<Image
+							className='aspect-auto'
+							src={"/images/team/hero-image.png"}
+							alt='hero image'
+							width={847}
+							height={762}
+						/>
+					</div>
+
+					{/* <div className='absolute bottom-0 shrink-0 max-w-[471px] mx-auto -left-20 -right-20 md:left-[unset] mx:m-0 md:max-w-[500px] lg:max-w-[600px] md:-right-6 md:-bottom-10 lg:h-auto xl:top-20 xl:-right-[124px] xl:bottom-[unset] xl:max-w-[947px] 2xl:max-w-[846px]'>
 						<Image
 							className='aspect-auto'
 							src={"/images/team/hero-image-new.png"}
@@ -23,7 +33,7 @@ export default function HeroSection() {
 							width={847}
 							height={762}
 						/>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>
