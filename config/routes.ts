@@ -4,7 +4,7 @@ export const ROUTES = {
 	CASES: "/cases",
 	AI: "/ai",
 	ABOUT_US: "/about-us",
-	CONTACT_US: "/contact-us",
+	CONTACT_US: "/contact-us/#body",
 	AI_STRATEGY: "/ai-strategy",
 	TEAM: "/team",
 	AUTOMATION: "/automation",

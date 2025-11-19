@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Link from "next/link"
+import { ROUTES } from "@/config/routes"
 import { formatDate } from "@/lib/utils"
 import type { Post } from "@/types/blog"
 import SharePost from "./share-post"
@@ -12,13 +14,37 @@ export default function PostItem({ post }: PostItemProps) {
 		<section className='py-[60px] md:mt-6'>
 			<div className='container max-w-[948px]'>
 				<div>
-					<div className='flex divide-x divide-neutral-600 space-x-4 flex-wrap'>
-						<p className='text-neutral-black font-semibold leading-[1.6] tracking-[0.16] pr-4'>
-							{formatDate(post.createdAt)}
-						</p>
-						<p className='text-neutral-black font-semibold leading-[1.6] tracking-[0.16] pr-4'>
-							{post.categories.map((category) => category.name).join(", ")}
-						</p>
+					<div className='flex flex-wrap gap-4 items-center justify-between'>
+						<div className='flex divide-x divide-neutral-600 space-x-4 flex-wrap'>
+							<p className='text-neutral-black font-semibold leading-[1.6] tracking-[0.16] pr-4'>
+								{formatDate(post.createdAt)}
+							</p>
+							<p className='text-neutral-black font-semibold leading-[1.6] tracking-[0.16] pr-4'>
+								{post.categories.map((category) => category.name).join(", ")}
+							</p>
+						</div>
+
+						<Link
+							href={ROUTES.AI}
+							className='text-blue-600 hover:text-blue-700 underline underline-offset-4 font-semibold flex items-center gap-2'
+						>
+							<svg
+								width='12'
+								height='24'
+								viewBox='0 0 12 24'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'
+							>
+								<title>back arrow</title>
+								<path
+									fillRule='evenodd'
+									clipRule='evenodd'
+									d='M1.84306 11.289L7.50006 5.632L8.91406 7.046L3.96406 11.996L8.91406 16.946L7.50006 18.36L1.84306 12.703C1.65559 12.5155 1.55028 12.2612 1.55028 11.996C1.55028 11.7308 1.65559 11.4765 1.84306 11.289Z'
+									fill='#0D63EC'
+								/>
+							</svg>
+							Back to all articles
+						</Link>
 					</div>
 
 					<TypographyH1 className='mt-6 text-[28px] tracking-[0.28px] leading-[1.4] md:text-5xl md:leading-[1.4] md:tracking-[0.48px]'>

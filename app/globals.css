@@ -105,7 +105,7 @@
 /* Base Elements  */
 @layer base {
 	html {
-		@apply scroll-smooth scroll-pt-8;
+		@apply scroll-smooth;
 	}
 	body {
 		@apply text-neutral-800 font-manrope scroll-smooth;

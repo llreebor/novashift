@@ -63,11 +63,10 @@ export default function RootLayout({
 	return (
 		<html lang='en' className='h-full'>
 			<body
+				id='body'
 				className={`${manrope.variable} antialiased flex flex-col h-full`}
-				suppressHydrationWarning
 			>
 				<Header />
-
 				<main className='flex-1'>{children}</main>
 				<Footer />
 			</body>
